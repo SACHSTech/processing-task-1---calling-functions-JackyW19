@@ -25,11 +25,31 @@ public class Sketch extends PApplet {
   public void draw() {
 	  
 	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+  
+    // sky 
+    fill(0, 255, 255);
+    rect(0, 0, 400, 230);
 
-    stroke(255);
-    line(50, 125, 70, 50);  
+    // house 
+    fill(255, 205, 180);
+    rect(170, 220, 70, 45);
+
+    // roof
+    fill(165, 42, 42);
+    triangle(170, 220, 205, 195, 240, 220);
+
+    // window
+    fill(0, 0, 255);
+    rect(179, 230, 10, 12);
+    rect(220, 230, 10, 12);
+    
+    // door 
+    fill(165, 42, 42);
+    rect(200, 242, 10, 12);
+
+    // sun 
+    fill(255, 255, 0);
+    ellipse(0, 0, 150, 150);
   }
   
   // define other methods down here.
